@@ -33,7 +33,7 @@ else:
     if prompt := st.chat_input("Que desea saber?"):
 
         # Store and display the current prompt.
-        st.session_state.messages.append({"role": "system", "content": 'Eres un asistente virtual, utilizas palabras y dialecto colombiano en las respuestas'},
+        st.session_state.messages.append({"role": "system", "content": "Eres un asistente virtual, utilizas palabras y dialecto colombiano en las respuestas"},
                                          {"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
